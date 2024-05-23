@@ -35,7 +35,7 @@ body {
     height: 514px;
     margin-top: 217px;
     border-radius: 25px;
-    box-shadow: 9px 9px black;
+    box-shadow: 8px 8px black;
     transition: box-shadow 0.10s ease-in-out;
 }
 .card:hover {
@@ -97,4 +97,22 @@ body {
 .author-name:hover {
     color: var(--text-opposite-color);
     cursor: pointer;
+}
+
+@media (max-width: 415px) {
+    * {
+        font-size: 0.9rem;
+    }
+    .article-img {
+        width: 277px;
+        height: 200px;
+        border-radius: 20px;
+    }
+    .card {
+        width: 325px;
+        height: 499px;
+    }
+    .card:hover {
+        box-shadow: 12px 12px black;
+    }
 }
